@@ -29,7 +29,7 @@ public class TicketMachine
         balance = 0;
         total = 0;
     }
-
+public static final ticket Aylesbury_ticket=new ticket("Alylesbury",220);
     /**
      * @Return The price of a ticket.
      */
