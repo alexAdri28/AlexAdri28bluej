@@ -24,7 +24,7 @@ public class Student
     {
         name = fullName;
         id = studentID;
-        credits = 0;
+        credits = 15;
     }
 
     /**

@@ -83,6 +83,24 @@ public class Course
         { 
             return grade.F;
         }
+        else if ((mark>=0) && (mark<=50))
+        { 
+            return grade.D;
+        }
+        else if ((mark>=0) && (mark<=60))
+        { 
+            return grade.C;
+        }
+        else if((mark>=0) &&(mark<=70))
+        { 
+            return grade.B;
+        }
+        else if ((mark>=0) &&(mark<=100))
+        { 
+            return grade.A;
+        }
+        
+        
         return grade.X;
     }
 

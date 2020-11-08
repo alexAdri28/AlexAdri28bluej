@@ -1,0 +1,27 @@
+Student student1 = new Student("Ellie Smith", "43432");
+Student student2 = new Student("Alan Brown", "34323");
+Student student3 = new Student("Sam Day", "34343");
+Student student4 = new Student("Tom Cat", "32323");
+Course course1 = new Course("G400", "computing");
+student1.enrolOnCourse(course1);
+student2.enrolOnCourse(course1);
+student3.enrolOnCourse(course1);
+student4.enrolOnCourse(course1);
+Module module1 = new Module("Programming Cocepts", "CO$52");
+module1.AwardMark(40);
+Module module2 = new Module("Computer Architectures", "CO450");
+module2.AwardMark(50);
+Module module3 = new Module("Web Development", "CO456");
+module3.AwardMark(60);
+Module module4 = new Module("Digital Technologies And Professinal Practice", "CO454");
+module4.AwardMark(80);
+course1.covertToGrade(40)
+    returned Object F
+course1.covertToGrade(50)
+    returned Object D
+course1.covertToGrade(60)
+    returned Object C
+course1.covertToGrade(80)
+    returned Object A
+student1.print();
+Ellie Smith, student ID: 43432, credits: 0
