@@ -1,9 +1,13 @@
 
 /**
- * Write a description of class Course here.
+ * The creatve a class course in order to give the student the modules where it will calculated the grade and for that i used 
+ * an if stament and is course is link to the Class Module and the Class Grade and in order to link them i use variable such as 
+ * String, int, and void.
+ * 
+ * .
  *
- * @author Derek Peacock
- * @version 0.1
+ * Alex Gordillo Adriano
+ * @version 0.1 07/11/2020
  */
 public class Course
 
@@ -13,11 +17,19 @@ public class Course
     
     private String codeNo;
     
+    private int finalMark;
+    
+    private grade finalGrade;
+    
     
     private Module module1;
+    
     private Module module2;
+    
     private Module module3;
+    
     private Module module4;
+    
 
     
     /**
@@ -37,8 +49,25 @@ public class Course
     /**
      * 
      */
-    public void addModule(Module module,int moduleNo)
-    {
+    public void addMark(int mark,int moduleNo)
+    { 
+        if(moduleNo ==1)
+        {
+          module1.AwardMark(mark);
+          
+        } 
+        else if(moduleNo ==2)
+        { 
+            module2.AwardMark(mark);
+        }
+        else if(moduleNo ==3)
+        { 
+            module3.AwardMark(mark);
+        }
+        else if(moduleNo ==4)
+        { 
+            module4.AwardMark(mark);
+        }
     }
     /**
      * 
@@ -47,6 +76,14 @@ public class Course
     {   //put your code here
         System.out.println("Course" + codeNo+"-"+title);
             
+    }
+    public grade covertToGrade(int mark)
+    { 
+        if((mark>=0 ) && (mark<=40))
+        { 
+            return grade.F;
+        }
+        return grade.X;
     }
 
 }
