@@ -1,0 +1,62 @@
+Product product1 = new Product(45, "TV");
+Product product2 = new Product(456, "Speaker");
+Product product3 = new Product(554, "Guitar");
+Product product4 = new Product(676, "Computer gaming");
+Product product5 = new Product(27, "Phone");
+Product product6 = new Product(132, "Microwave Oven");
+StockManager tv = new StockManager();
+StockManager speaker = new StockManager();
+StockManager Guitar = new StockManager();
+StockManager Computer = new StockManager();
+StockManager Phone = new StockManager();
+StockManager Microwaveoven = new StockManager();
+tv.delivery(27, 20);
+speaker.delivery(456, 200);
+Guitar.delivery(554, 500);
+product4.toString()
+    returned String "676: Computer gaming stock level: 0"
+Computer.delivery(676, 766);
+Phone.delivery(27, 900);
+Microwaveoven.delivery(132, 1000);
+product1.sellOne();
+Attempt to sell an out of stock item: TV
+product2.sellOne();
+Attempt to sell an out of stock item: Speaker
+product3.sellOne();
+Attempt to sell an out of stock item: Guitar
+product4.sellOne();
+Attempt to sell an out of stock item: Computer gaming
+product5.sellOne();
+Attempt to sell an out of stock item: Phone
+product6.sellOne();
+Attempt to sell an out of stock item: Microwave Oven
+product1.toString()
+    returned String "45: TV stock level: 0"
+product1.getID()
+    returned int 45
+product2.getID()
+    returned int 456
+product3.getID()
+    returned int 554
+product4.getID()
+    returned int 676
+product5.getID()
+    returned int 27
+product6.getID()
+    returned int 132
+tv.printProductDetails();
+speaker.printProductDetails();
+Guitar.printProductDetails();
+Computer.printProductDetails();
+Phone.printProductDetails();
+Microwaveoven.printProductDetails();
+product2.toString()
+    returned String "456: Speaker stock level: 0"
+product3.toString()
+    returned String "554: Guitar stock level: 0"
+product4.toString()
+    returned String "676: Computer gaming stock level: 0"
+product5.toString()
+    returned String "27: Phone stock level: 0"
+product6.toString()
+    returned String "132: Microwave Oven stock level: 0"
