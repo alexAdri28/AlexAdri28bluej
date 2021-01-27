@@ -1,0 +1,86 @@
+Program.main();
+******************************
+ Stock Management Application 
+    App05: by Alex Adriano 
+******************************
+
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> print
+
+===================
+Berzin's stock list
+===================
+
+101: Television stock level: 0
+102: Motorola android phone stock level: 0
+103: Washing machine stock level: 0
+104: LED stock level: 0
+105: Toshiba Laptop stock level: 0
+106: Belkin Router stock level: 0
+107: Wi-fi Extender stock level: 0
+108: Freezer stock level: 0
+109: Microwave stock level: 0
+110: Toaster stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Alex Adriano 
+******************************
+
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> add
+
+Adding a new product
+Enter the product name
+> amazon alexa
+Enter a product ID
+> 111
+******************************
+ Stock Management Application 
+    App05: by Alex Adriano 
+******************************
+
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> print
+
+===================
+Berzin's stock list
+===================
+
+101: Television stock level: 0
+102: Motorola android phone stock level: 0
+103: Washing machine stock level: 0
+104: LED stock level: 0
+105: Toshiba Laptop stock level: 0
+106: Belkin Router stock level: 0
+107: Wi-fi Extender stock level: 0
+108: Freezer stock level: 0
+109: Microwave stock level: 0
+110: Toaster stock level: 0
+111: amazon alexa stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Alex Adriano
+******************************
+
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> quit

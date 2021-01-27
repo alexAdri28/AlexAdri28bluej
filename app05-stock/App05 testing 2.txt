@@ -1,0 +1,154 @@
+print
+
+===================
+Berzin's stock list
+===================
+
+101: Television stock level: 0
+102: Motorola android phone stock level: 0
+103: Washing machine stock level: 0
+104: LED stock level: 0
+105: Toshiba Laptop stock level: 0
+106: Belkin Router stock level: 0
+107: Wi-fi Extender stock level: 0
+108: Freezer stock level: 0
+109: Microwave stock level: 0
+110: Toaster stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Alex Adriano
+******************************
+
+
+    Add:        Add a new product
+    Remove:     Removes a product
+    sell:     sells a product
+    restock:     restocks all products
+    Print:   Print all products
+    Quit:       Quit the program
+
+> add
+
+Adding a new product
+Enter the product name
+> Apple iPhone X 
+Enter a product ID
+> 101
+Duplicate ID
+******************************
+ Stock Management Application 
+    App05: by Alex Adriano
+******************************
+
+
+    Add:        Add a new product
+    Remove:     Removes a product
+    sell:     sells a product
+    restock:     restocks all products
+    Print:   Print all products
+    Quit:       Quit the program
+
+> add
+
+Adding a new product
+Enter the product name
+> Redmi note 8T
+Enter a product ID
+> 111
+
+New Product added111: Redmi note 8T stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Alex Adriano 
+******************************
+
+
+    Add:        Add a new product
+    Remove:     Removes a product
+    sell:     sells a product
+    restock:     restocks all products
+    Print:   Print all products
+    Quit:       Quit the program
+
+> print
+
+===================
+Berzin's stock list
+===================
+
+101: Television stock level: 0
+102: Motorola android phone stock level: 0
+103: Washing machine stock level: 0
+104: LED stock level: 0
+105: Toshiba Laptop stock level: 0
+106: Belkin Router stock level: 0
+107: Wi-fi Extender stock level: 0
+108: Freezer stock level: 0
+109: Microwave stock level: 0
+110: Toaster stock level: 0
+111: Redmi note 8T stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Alex Adriano
+******************************
+
+
+    Add:        Add a new product
+    Remove:     Removes a product
+    sell:     sells a product
+    restock:     restocks all products
+    Print:   Print all products
+    Quit:       Quit the program
+
+> remove
+
+Removing the Product
+Enter a product ID
+> 111
+
+Removed Product
+******************************
+ Stock Management Application 
+    App05: by Alex Adriano
+******************************
+
+
+    Add:        Add a new product
+    Remove:     Removes a product
+    sell:     sells a product
+    restock:     restocks all products
+    Print:   Print all products
+    Quit:       Quit the program
+
+> print
+
+===================
+Berzin's stock list
+===================
+
+101: Television stock level: 0
+102: Motorola android phone stock level: 0
+103: Washing machine stock level: 0
+104: LED stock level: 0
+105: Toshiba Laptop stock level: 0
+106: Belkin Router stock level: 0
+107: Wi-fi Extender stock level: 0
+108: Freezer stock level: 0
+109: Microwave stock level: 0
+110: Toaster stock level: 0
+0: null stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Alex Adriano
+******************************
+
+
+    Add:        Add a new product
+    Remove:     Removes a product
+    sell:     sells a product
+    restock:     restocks all products
+    Print:   Print all products
+    Quit:       Quit the program
+
+> quit

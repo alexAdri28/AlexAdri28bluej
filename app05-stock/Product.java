@@ -1,8 +1,8 @@
 /**
  * Model some details of a product sold by a company.
  * 
- * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * @author Alex Gordillo Adriano.
+ * @version 2021.01.26
  */
 public class Product
 {
@@ -23,9 +23,28 @@ public class Product
     {
         this.id = id;
         this.name = name;
-        quantity = 0;
     }
-
+    
+    public void removeProduct(int id)
+    {
+        name = null;
+        this.id = 0;
+    }
+    
+    public void deliver (int amount)
+    {
+        if(amount > 0)
+        {
+            quantity += amount;
+            
+            System.out.println("Delivered" + amount + " " + name);
+        }
+        else
+        {
+            System.out.println("Attempting to restock" + name + "with a non-positive amount: " + amount);
+        }
+    }
+    
     /**
      * @return The product's id.
      */
@@ -40,6 +59,14 @@ public class Product
     public String getName()
     {
         return name;
+    }
+    
+    /**
+     * sets the name of the product 
+     */
+    public void setName (String name)
+    {
+        this.name = name; 
     }
 
     /**
@@ -73,7 +100,7 @@ public class Product
         else 
         {
             System.out.println("Attempt to restock " + name +
-                               " with a non-positive amount: " + amount);
+                               " with a negative or zero amount: " + amount);
         }
     }
 
@@ -81,16 +108,19 @@ public class Product
      * Sell one of these products.
      * An error is reported if there appears to be no stock.
      */
-    public void sellOne()
+    public void sell(int saleQuantity)
     {
-        if(quantity > 0) 
-        {
-            quantity--;
-        }
-        else 
-        {
+        if(saleQuantity >= quantity) 
+       {
+            System.out.println("only " + quantity + " " + name + " in stock, but there were " + saleQuantity + " ordered ");
+            
+            quantity = 100;
+       }
+       else 
+       {
             System.out.println(
-                "Attempt to sell an out of stock item: " + name);
-        }
+                " Selling " + saleQuantity + " of stock item: " + name);
+                quantity -= saleQuantity;
+       }
     }
 }

@@ -1,0 +1,199 @@
+
+Restocking Products
+Enter a product ID
+> 110
+enter amount
+> 20
+******************************
+ Stock Management Application 
+    App05: by Alex Adriano 
+******************************
+
+
+    Add:        Add a new product
+    Remove:     Removes a product
+    deliver:     delivers a product
+    restock:     restocks a product
+    search:     Searches for particular product
+    Print:   Print all products
+    Quit:       Quit the program
+
+> print
+
+===================
+Berzin's stock list
+===================
+
+101: Television stock level: 0
+102: Motorola android phone stock level: 0
+103: Washing machine stock level: 0
+104: LED stock level: 0
+105: Toshiba Laptop stock level: 0
+106: Belkin Router stock level: 0
+107: Wi-fi Extender stock level: 0
+108: Freezer stock level: 0
+109: Microwave stock level: 0
+110: Toaster stock level: 20
+******************************
+ Stock Management Application 
+    App05: by Alex Adriano
+******************************
+
+
+    Add:        Add a new product
+    Remove:     Removes a product
+    deliver:     delivers a product
+    restock:     restocks a product
+    search:     Searches for particular product
+    Print:   Print all products
+    Quit:       Quit the program
+
+> deliver
+
+Delivering Products
+Enter a product ID
+> 110
+enter amount
+> 10
+ Selling 10 of stock item: Toaster
+******************************
+ Stock Management Application 
+    App05: by Alex Adriano 
+******************************
+
+
+    Add:        Add a new product
+    Remove:     Removes a product
+    deliver:     delivers a product
+    restock:     restocks a product
+    search:     Searches for particular product
+    Print:   Print all products
+    Quit:       Quit the program
+
+> print
+
+===================
+Berzin's stock list
+===================
+
+101: Television stock level: 0
+102: Motorola android phone stock level: 0
+103: Washing machine stock level: 0
+104: LED stock level: 0
+105: Toshiba Laptop stock level: 0
+106: Belkin Router stock level: 0
+107: Wi-fi Extender stock level: 0
+108: Freezer stock level: 0
+109: Microwave stock level: 0
+110: Toaster stock level: 10
+******************************
+ Stock Management Application 
+    App05: by Alex Adriano
+******************************
+
+
+    Add:        Add a new product
+    Remove:     Removes a product
+    deliver:     delivers a product
+    restock:     restocks a product
+    search:     Searches for particular product
+    Print:   Print all products
+    Quit:       Quit the program
+
+> restock
+
+Restocking Products
+Enter a product ID
+> 99
+enter amount
+> 10
+not a valid item
+******************************
+ Stock Management Application 
+    App05: by Alex Adriano
+******************************
+
+
+    Add:        Add a new product
+    Remove:     Removes a product
+    deliver:     delivers a product
+    restock:     restocks a product
+    search:     Searches for particular product
+    Print:   Print all products
+    Quit:       Quit the program
+
+> deliver
+
+Delivering Products
+Enter a product ID
+> 99
+enter amount
+> 10
+invalid product id99
+******************************
+ Stock Management Application 
+    App05: by Alex Adriano
+******************************
+
+
+    Add:        Add a new product
+    Remove:     Removes a product
+    deliver:     delivers a product
+    restock:     restocks a product
+    search:     Searches for particular product
+    Print:   Print all products
+    Quit:       Quit the program
+
+> print
+
+===================
+Berzin's stock list
+===================
+
+101: Television stock level: 0
+102: Motorola android phone stock level: 0
+103: Washing machine stock level: 0
+104: LED stock level: 0
+105: Toshiba Laptop stock level: 0
+106: Belkin Router stock level: 0
+107: Wi-fi Extender stock level: 0
+108: Freezer stock level: 0
+109: Microwave stock level: 0
+110: Toaster stock level: 10
+******************************
+ Stock Management Application 
+    App05: by Alex Adriano 
+******************************
+
+
+    Add:        Add a new product
+    Remove:     Removes a product
+    deliver:     delivers a product
+    restock:     restocks a product
+    search:     Searches for particular product
+    Print:   Print all products
+    Quit:       Quit the program
+
+> deliver
+
+Delivering Products
+Enter a product ID
+> 110
+enter amount
+> 11
+only 10 Toaster in stock, but there were 11 ordered 
+******************************
+ Stock Management Application 
+    App05: by Alex Adriano 
+******************************
+
+
+    Add:        Add a new product
+    Remove:     Removes a product
+    deliver:     delivers a product
+    restock:     restocks a product
+    search:     Searches for particular product
+    Print:   Print all products
+    Quit:       Quit the program
+
+> quit

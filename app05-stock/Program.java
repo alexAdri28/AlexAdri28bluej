@@ -1,11 +1,9 @@
-import java.io.IOException;
-import java.lang.InterruptedException;
 
 /**
  * Write a description of class Program here.
  *
- * Alex Gordillo Adriano
- * 26/01/2021
+ * @author Alex Gordillo Adriano 
+ * @version 26/01/2021
  */
 public class Program
 {
@@ -15,7 +13,7 @@ public class Program
      * This class creates and runs an instance of
      * the StockApp class
      */
-    public static void main() throws IOException, InterruptedException
+    public static void main()
     {
         app = new StockApp();
         app.run();
