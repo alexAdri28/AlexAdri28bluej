@@ -11,10 +11,10 @@
  *  rooms, creates the parser and starts the game.  It also evaluates and
  *  executes the commands that the parser returns.
  * 
- * @author  Michael Kölling and David J. Barnes
- * @version 2016.02.29
+ * @author  Alex Gordillo Adriano
+ * @version 2021.01.27
  * 
- * Modified and extended by Student Name
+ * 
  */
 
 public class Game 
@@ -71,6 +71,7 @@ public class Game
 
         // Enter the main command loop.  Here we repeatedly read commands and
         // execute them until the game is over.
+        // implementations of user commands:
                 
         boolean finished = false;
         
@@ -104,33 +105,27 @@ public class Game
     private boolean processCommand(Command command) 
     {
         boolean wantToQuit = false;
-
         CommandWord commandWord = command.getCommandWord();
-
-        switch (commandWord) 
-        {
+        switch(commandWord){
             case UNKNOWN:
-                System.out.println("I don't know what you mean...");
-                break;
-
+                 System.out.println("i dont know what i mean" );
+                 break;
             case HELP:
-                printHelp();
-                break;
-
+                 printHelp();
+                 break;
             case GO:
-                goRoom(command);
-                break;
-
+                 goRoom(command);
+                 break;
             case QUIT:
                 wantToQuit = quit(command);
-                break;
-        }
-        return wantToQuit;
+                 break;
+       
     }
+     return wantToQuit;
 
-    // implementations of user commands:
+}
 
-    /**
+     /**
      * Print out some help information.
      * Here we print some stupid, cryptic message and a list of the 
      * command words.
