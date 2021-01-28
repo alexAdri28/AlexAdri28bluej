@@ -14,7 +14,7 @@ import java.util.Scanner;
  * returns a command object that is marked as an unknown command.
  * 
  * @author  Alex Gordillo Adriano
- * @version 2021.01.27
+ * @version 2021.01.19
  */
 public class Parser 
 {
@@ -28,6 +28,8 @@ public class Parser
     {
         commands = new CommandWords();
         reader = new Scanner(System.in);
+        //system.in is of type InputStream 
+        //A scanner constructor takes an InputStream paramater.
     }
 
     /**
@@ -42,10 +44,11 @@ public class Parser
         System.out.print("> ");     // print prompt
 
         inputLine = reader.nextLine();
-
-        // Find up to two words on the line.
+        //gets entire next line as opposed to next string.
         Scanner tokenizer = new Scanner(inputLine);
         
+        
+        //Find up to two words on the line 
         if(tokenizer.hasNext()) 
         {
             word1 = tokenizer.next();      // get first word

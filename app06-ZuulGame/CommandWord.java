@@ -3,8 +3,7 @@
  * along with a string in a particular language.
  * 
  * @author  Alex Gordillo Adriano
- * @version 2021
- * .01.27
+ * @version 2021.01.19
  */
 public enum CommandWord
 {

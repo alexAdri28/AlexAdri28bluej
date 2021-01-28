@@ -12,9 +12,9 @@
  *  executes the commands that the parser returns.
  * 
  * @author  Alex Gordillo Adriano
- * @version 2021.01.27
+ * @version 2020.01.19
  * 
- * 
+ * Modified and extended by Student Name
  */
 
 public class Game 
@@ -71,7 +71,6 @@ public class Game
 
         // Enter the main command loop.  Here we repeatedly read commands and
         // execute them until the game is over.
-        // implementations of user commands:
                 
         boolean finished = false;
         
@@ -94,7 +93,7 @@ public class Game
         System.out.println("World of Zuul is a new, incredibly boring adventure game.");
         System.out.println("Type '" + CommandWord.HELP + "' if you need help.");
         System.out.println();
-        System.out.println(currentRoom.getLongDescription());
+        System.out.println("You are" + currentRoom.getShortDescription());
     }
 
     /**
@@ -105,27 +104,33 @@ public class Game
     private boolean processCommand(Command command) 
     {
         boolean wantToQuit = false;
+
         CommandWord commandWord = command.getCommandWord();
-        switch(commandWord){
+
+        switch (commandWord) 
+        {
             case UNKNOWN:
-                 System.out.println("i dont know what i mean" );
-                 break;
+                System.out.println("I don't know what you mean...");
+                break;
+
             case HELP:
-                 printHelp();
-                 break;
+                printHelp();
+                break;
+
             case GO:
-                 goRoom(command);
-                 break;
+                goRoom(command);
+                break;
+
             case QUIT:
                 wantToQuit = quit(command);
-                 break;
-       
+                break;
+        }
+        return wantToQuit;
     }
-     return wantToQuit;
 
-}
+    // implementations of user commands:
 
-     /**
+    /**
      * Print out some help information.
      * Here we print some stupid, cryptic message and a list of the 
      * command words.
@@ -155,16 +160,31 @@ public class Game
         String direction = command.getSecondWord();
 
         // Try to leave current room.
-        Room nextRoom = currentRoom.getExit(direction);
+        Room nextRoom = null;
+        if(direction.equals("north"))
+         {nextRoom= currentRoom.northExit;
+            }
+         if(direction.equals("east"))
+         {nextRoom= currentRoom.eastExit;
+            }
+         if(direction.equals("south"))
+         {nextRoom= currentRoom.southExit;
+            }
+         if(direction.equals("west"))
+         {nextRoom= currentRoom.westExit;
+            }
 
         if (nextRoom == null) {
             System.out.println("There is no door!");
         }
         else {
             currentRoom = nextRoom;
-            System.out.println(currentRoom.getLongDescription());
+            System.out.println(currentRoom.getShortDescription());
         }
     }
+    /**
+     * Print 
+     */
 
     /** 
      * "Quit" was entered. Check the rest of the command to see

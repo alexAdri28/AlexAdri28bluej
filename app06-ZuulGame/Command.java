@@ -14,7 +14,7 @@
  * If the command had only one word, then the second word is <null>.
  * 
  * @author  Alex Gordillo Adriano
- * @version 2021.01.27
+ * @version 2021.01.19
  */
 
 public class Command
@@ -58,7 +58,7 @@ public class Command
      */
     public boolean isUnknown()
     {
-        return (commandWord == CommandWord.UNKNOWN);
+        return (commandWord == null);
     }
 
     /**
