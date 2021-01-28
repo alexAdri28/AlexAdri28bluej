@@ -1,0 +1,17 @@
+Student student1 = new Student("Ellie Smith", "543355");
+Student student2 = new Student("Adam Brown", "789876");
+Student student3 = new Student("Leonel Messi ", "454323");
+Student student4 = new Student("Derick Yellow", "323322");
+LabClass co452lapclass = new LabClass(10);
+co452lapclass.enrollStudent(student1);
+co452lapclass.enrollStudent(student2);
+co452lapclass.enrollStudent(student3);
+co452lapclass.enrollStudent(student4);
+co452lapclass.setInstructor("Nicolas Day");
+co452lapclass.setRoom("G100");
+co452lapclass.setTime("Tuesday,29th,Septeber 2020");
+Course Computing = new Course();
+Course Computing = new Course();
+Computing.hashCode()
+    returned int 938781000
+Course Computing = new Course();

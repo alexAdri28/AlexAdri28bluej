@@ -1,5 +1,49 @@
-LabClass co452Lab = new LabClass(3);
-Student veena = new Student("Veena Patel", "20388712");
-Student gita = new Student("Gita Ralhan", "20844312");
-Student tim = new Student("Tim Lee", "20199812");
-co452Lab.enrollStudent(gita);
+Student student1 = new Student("Ellie Smith", "4332233");
+Student student2 = new Student("Adam Brown", "54343");
+Student student3 = new Student("Alex Adriano", "43434432");
+Student student4 = new Student("kevin Gordillo", "56443");
+LabClass co452Lab = new LabClass(10);
+co452Lab.setInstructor( "Nicholas Day");
+co452Lab.setRoom("G100");
+co452Lab.setTime("Tuesday 29th,September 2020");
+co452Lab.enrollStudent(student1);
+co452Lab.enrollStudent(student2);
+co452Lab.enrollStudent(student3);
+co452Lab.enrollStudent(student4);
+student1.addCredits(20);
+student2.addCredits(20);
+student3.addCredits(20);
+student4.addCredits(20);
+student1.changeName("Ellie");
+student2.changeName("Adam");
+student3.changeName("Kevin");
+student4.changeName("Alex");
+Course G400Computing = new Course();
+student1.enrolOnCourse(G400Computing);
+student2.enrolOnCourse(G400Computing);
+student3.enrolOnCourse(G400Computing);
+student4.enrolOnCourse(G400Computing);
+student1.print();
+Ellie, student ID: 4332233, credits: 20
+student2.print();
+Adam, student ID: 54343, credits: 20
+student3.print();
+Kevin, student ID: 43434432, credits: 20
+student4.print();
+Alex, student ID: 56443, credits: 20
+student1.getStudentID()
+    returned String "4332233"
+student2.getName()
+    returned String "Adam"
+student3.getStudentID()
+    returned String "43434432"
+student4.getName()
+    returned String "Alex"
+student1.getLoginName()
+    returned String "Elli433"
+student2.getLoginName()
+    returned String "Adam543"
+student3.getLoginName()
+    returned String "Kevi434"
+student4.getLoginName()
+    returned String "Alex564"
